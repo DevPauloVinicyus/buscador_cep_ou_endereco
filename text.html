@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style/css.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <title>BUSCADOR DE CEP</title>
+</head>
+<body>
+    <div class="form-container">
+        <h1>BUSCADOR DE CEP OU ENDEREÇO:</h1>
+        <p><span class="red">Busca por Endereço Completo:</span> Ao digitar corretamente os dados do logradouro (rua, número, bairro, cidade e estado) e clicar em "Buscar", o sistema retorna o CEP correspondente com precisão.</p>
+        <p><span class="red">Busca por CEP:</span> Caso o usuário tenha apenas o CEP em mãos, ao digitá-lo e clicar em "Buscar", o sistema exibe as informações detalhadas do endereço correspondente.</p>
+    
+        <div class="form-group">
+          <label>ENDEREÇO</label>
+          <input type="text" placeholder="Nome da rua">
+        </div>
+    
+        <div class="form-group">
+          <label>BAIRRO</label>
+          <input type="text" placeholder="Nome do bairro">
+        </div>
+    
+        <div class="form-group row">
+          <div>
+            <label>CIDADE</label>
+            <input type="text" placeholder="Nome da cidade">
+          </div>
+          <div>
+            <label>ESTADO</label>
+            <input type="text" placeholder="Nome do Estado">
+          </div>
+        </div>
+    
+        <div class="form-group">
+          <label>CEP</label>
+          <input type="text" placeholder="Ex: 96789-434">
+        </div>
+    
+        <div class="buttons">
+          <button>🔍 BUSCAR</button>
+          <button>↺ LIMPAR</button>
+        </div>
+      </div>
+    
+      <div class="footer">
+        <p><code>Copyright &copy;2025 <span>INOVARE WEB DESIGN</span> todos os Direitos Reservados</code> 
+          <i>🌐</i> <i>📱</i> <i>📷</i> <i>🐱</i>
+        </p>
+      </div>
+</body>
+</html>
