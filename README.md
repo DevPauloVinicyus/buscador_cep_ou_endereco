@@ -1,4 +1,6 @@
 🔍 Buscador de CEP ou ENDEREÇO
+
+
 O Buscador de CEP ou ENDEREÇO é uma aplicação web desenvolvida com HTML, CSS e JavaScript, criada para facilitar a consulta rápida e prática de endereços completos a partir de um CEP (ou vice-versa), utilizando recursos de API para fornecer dados atualizados e precisos.
 
 Este projeto possui como principais características:
