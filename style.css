@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 2px;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: url(../images/background.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container {
+  background: rgba(0.5, 0.5, 0.2, 0.9);
+  color: white;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  border: 5px solid white;
+  
+}
+
+.titulo {
+  font-family: "Bungee Outline", cursive;
+  text-align: center;
+  margin-bottom: 15px;
+  font-style: italic;
+  font-size: 32px;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: #000 1px -1px, #000 -1px 1px, #000 1px 1px, #000 -1px -1px;
+}
+
+.subtitulo {
+  font-family: "Bungee Outline", cursive;
+  text-align: center;
+  margin-bottom: 15px;
+  font-style: italic;
+  font-size: 22px;
+  font-weight: bold;
+  text-shadow: #000 1px -1px, #000 -1px 1px, #000 1px 1px, #000 -1px -1px;
+}
+
+span {
+  color: #8b5eca;
+  
+}
+
+input {
+  font-size: 20px;
+  text-align: center;
+  border-radius: 7px;
+  border: 0 none;
+  outline: 0;
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+input:disabled {
+  background: white;
+  color: black;
+}
+
+.titulo-endereco {
+  margin: auto;
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  color: white;
+  font-weight: bold;
+  font-size: 2.5vh;
+  text-shadow: #000 1px -1px, #000 -1px 1px, #000 1px 1px, #000 -1px -1px;
+}
+
+.endereco {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+}
+
+.titulo-bairro {
+  margin: auto;
+  grid-column: 1 / span 2;
+  grid-row: 3;
+  color: white;
+  font-weight: bold;
+  font-size: 2.5vh;
+  text-shadow: #000 1px -1px, #000 -1px 1px, #000 1px 1px, #000 -1px -1px;
+}
+
+.bairro {
+  grid-column: 1 / span 2;
+  grid-row: 4;
+}
+
+.estado,
+.cidade {
+  grid-row: 6;
+}
+
+.titulo-cidade {
+  margin: auto;
+  grid-column: 1;
+  grid-row: 5;
+  color: white;
+  font-weight: bold;
+  font-size: 2.5vh;
+  text-shadow: #000 1px -1px, #000 -1px 1px, #000 1px 1px, #000 -1px -1px;
+}
+
+.titulo-estado {
+  margin: auto;
+  grid-column: 2;
+  grid-row: 5;
+  color: white;
+  font-weight: bold;
+  font-size: 2.5vh;
+  text-shadow: #000 1px -1px, #000 -1px 1px, #000 1px 1px, #000 -1px -1px;
+}
+
+.titulo-CEP {
+  margin: auto;
+  grid-column: 1 / span 2;
+  grid-row: 7;
+  color: white;
+  font-weight: bold;
+ font-size: 2.5vh;
+  text-shadow: #000 1px -1px, #000 -1px 1px, #000 1px 1px, #000 -1px -1px;
+}
+
+.CEP {
+  grid-column: 1 / span 2;
+  grid-row: 8;
+}
+
+.linha-cidade-estado {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.linha-cidade-estado .campo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.linha-cidade-estado label {
+  color: white;
+  font-weight: bold;
+  font-size: 2.5vh;
+  text-shadow: #000 1px -1px, #000 -1px 1px, #000 1px 1px, #000 -1px -1px;
+  margin-bottom: 5px;
+}
+
+.linha-cidade-estado input {
+  font-size: 20px;
+  text-align: center;
+  border-radius: 7px;
+  border: none;
+  outline: 0;
+  padding: 10px;
+}
+
+.btn-search,
+.btn-clear {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 24px;
+  margin: 10px 50px;
+  background-color: #6a00ff;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.4s ease;
+}
+
+.btn-search svg,
+.btn-clear svg {
+  transition: stroke 0.4s ease;
+}
+
+.btn-search:hover,
+.btn-clear:hover {
+  background-color: #ffffff;
+  color: #6a00ff;
+}
+
+.btn-search:hover svg,
+.btn-clear:hover svg {
+  stroke: currentColor;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-style: italic;
+  font-size: 22px;
+  color: white;
+}
+
+button {
+  text-decoration: none;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-style: italic;
+  font-size: 22px;
+  color: white;
+}
+
+/*INICIO RODAPE*/
+
+.footer {
+
+  background: rgba(0.5, 0.5, 0.2, 0.9);
+  color: white;
+  max-width: 99%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  border: 5px solid white;
+  backdrop-filter: brightness(50%);
+}
+
+.footer-copyright {
+  font-size: 22px;
+  list-style: 2;
+  font-style: italic;
+  font-family: 'Embed code', Courier, monospace;
+  font-weight: bold;
+  text-align: center;
+}
+
+.footer-social-link {
+  color: white;
+
+  padding: 20px;
+}
+
+.footer-social-link:hover {
+  color: rgb(115, 0, 247);
+}
+
+/*FIM RODAPE*/
