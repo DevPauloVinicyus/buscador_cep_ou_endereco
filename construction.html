@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inovare Web Design</title>
+
+  <style>
+   html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: white;
+}
+
+body {
+  position: relative;
+  background-image: url("images/construction.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* 🔥 MOBILE FIRST */
+.whatsapp-link {
+  position: absolute;
+
+  /* posição relativa à IMAGEM */
+  left: 50%;  
+    height: 30%;
+    bottom: 35%;
+  transform: translateX(-80%);
+
+  /* PROPORCIONAL */
+  width: 65%;
+  height: 6%;
+
+  cursor: pointer;
+}
+
+
+/* 📱 Tablets */
+@media (min-width: 768px) {
+  .whatsapp-link {
+    width: 45%;
+    height: 6%;
+    bottom: 6%;
+  }
+}
+
+/* 🖥️ Desktop */
+@media (min-width: 1200px) {
+  .whatsapp-link {
+    width: 26%;
+    height: 6%;
+    bottom: 5%;
+    
+  transform: translateX(-99%);
+  }
+}
+
+  </style>
+</head>
+
+<body>
+
+  <a
+    href="https://wa.me/5531997826279"
+    class="whatsapp-link debug"
+    target="_blank"
+    aria-label="Fale conosco pelo WhatsApp"
+  ></a>
+
+</body>
+</html>
